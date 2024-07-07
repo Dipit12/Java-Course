@@ -1,0 +1,49 @@
+There are 3 types of languages:
+	-> Procedural programming languages:
+		1. Specifies a series of well-structured steps and procedures to compose a program
+		2. Contains a systematic order of statements, functions and commands to complete a task.
+		eg: Java, Python, C++, C etc 
+
+	-> Functional programming languages:
+		1. Writing a program only in pure functions i.e never modify variables, but only create new ones as output.
+		2. Used in situations where we have to perform lots of different operations on the same set of data like ML
+		eg: Python, C++ etc
+
+	-> Object-oriented programming languages:
+		1. Revolves around objects
+		2. Code + Data = object, anything that models real world entities, which has some properties
+		3. Developed to make it easier to develop,debug,reuse and maintain software
+
+		eg: Python, Java, C++ etc
+
+
+Static Vs Dynamic Languages
+
+Static languages:
+	-> Perform type checking at compile time
+	-> Errors will show at compile time
+	-> Declare datatype before you use it
+	-> More control
+
+Dynamic lanuages:
+	-> Perform type checking at runtime
+	-> Error might not show till program is run
+	-> No need to declare datatype of variables
+	-> Saves time in writint code but might give error at runtime
+
+
+Types of Memory:
+1. Stack memory
+2. Heap memory
+
+when we write a = 10; a is the reference variable and 10 is the object
+All the variable are stored in the stack memory while objects are stored in a heap, the variable points towards the object in the heap memory.
+More than 1 reference variable can point to the same object
+Change in object due to 1 variable would have impact on all other variables
+
+eg: a = [1,2,3,4,5]
+	b = a
+	a[0] = 99,
+	list becomes -> [99,2,3,4,5]
+	print(b) - would print the new list
+
