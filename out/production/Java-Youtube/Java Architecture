@@ -1,0 +1,91 @@
+** Java Introduction and Architecture **
+
+-> How Java code is executed
+			compiler				interpreter
+.java file -----------> .class file --------------> Machine code(0 and 1)
+
+						 (byte code)	(line by line)
+
+The .java file contains the source code
+
+.class file
+	-> this code will not directly run on a system
+	-> we need JVM to run this(Java virtual machine)
+	-> Reason why java is platform independent
+
+This is a major difference between languages like Java and C/C++ where the compiler converts the source code directly into machine code
+but in java, the compiler converts the source code into a bye code, which is further converted into machine code using a interpreter'
+
+** Difference between compiler and interpreter **
+	A compiler translates code written in a high-level programming language into a lower-level language like assembly language, object code and machine code (binary 1 and 0 bits). It converts the code ahead of time before the program runs.
+	An interpreter translates the code line-by-line when the program is running. You’ve likely used interpreters unknowingly at some point in your work career.
+
+
+More about platform independence:
+	-> it means that byte code can run on all operating systems
+	-> we need to convert source code to machine code so computer can understand
+	-> compiler helps in doing this by turning it into a executable code
+	-> this executable code is a set of instructions for the computer
+	-> After compiling C/C++ code, we get an .exe file which is platform dependent
+	-> In java we get bytecode, JVM converts this to machine code
+	-> Java is platform-independent but JVM is platform dependent
+
+JDK (Java development kit)
+	-> Provides environment to develop and run the Java program
+	-> It's a package that includes:
+		-> Development tools
+		-> JRE(Java runtime environment): to execute your program
+		-> a compiler -> javac
+		-> archiver - jar
+		-> docs generator -> javadoc
+		-> interpreter/loader
+
+JRE(Java runtime environment)
+	-> It is an installation package that provides environment to only run the program
+	-> It consists of:
+		-> Deployment technologies
+		-> User interface toolkits
+		-> Integration libraries
+		-> Base libraries
+		-> JVM
+
+	-> After we get the .class file, the next thing happen at runtime:
+		-> Class loader loads all classes needed to execute the program
+		-> JVM sends code to byte code verifier to check format of the code
+
+At the compile time:
+
+.java file -----------> .class file
+		javac(compilation)
+
+JVM execution:
+interpreter:
+-> Line by line execution
+-> When one method is called many times
+	it will interpret again and again
+JIT(just-in-time):
+	-> those methods that are repeated, JIÞ provides direct machine code so re-interpretation is not required
+	->makes execution faster
+
+At runtime:
+
+Class Loader --------> Byte code verifier ---------> Interpreter ---------> Runtime ---------> Hardware
+
+How JVM works?? -> Class Loader
+
+-> Loading:
+	1. reads .class file and generate binary data
+	2. an object of this class is created in heap
+
+-> Linking
+	1. JVM verifies the .class file
+	2. allocates memory for class variables & defualt values
+	3. replace symbolic references from the type with direct references
+
+-> Initialization
+	all static variables are assigned with their values defined in the code and static block
+
+JVM contains the stack and heap memory allocations
+
+
+
