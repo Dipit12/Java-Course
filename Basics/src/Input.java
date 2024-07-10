@@ -17,3 +17,4 @@ public class Input {
         System.out.println("The sum is " + sum);
     }
 }
+-
