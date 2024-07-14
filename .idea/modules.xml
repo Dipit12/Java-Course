@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/Conditionals_and_loops/Conditionals_and_loops.iml" filepath="$PROJECT_DIR$/Conditionals_and_loops/Conditionals_and_loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Functions/Functions.iml" filepath="$PROJECT_DIR$/Functions/Functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-Youtube.iml" filepath="$PROJECT_DIR$/.idea/Java-Youtube.iml" />
       <module fileurl="file://$PROJECT_DIR$/Switch-Statements/Switch-Statements.iml" filepath="$PROJECT_DIR$/Switch-Statements/Switch-Statements.iml" />
     </modules>
