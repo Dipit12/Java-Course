@@ -1,0 +1,8 @@
+// Concepts to go through to understand strings better
+    -> String Pool
+        -> Its basically a separate memory storage, inside the heap
+        eg: String a ="Dipit"
+            String b = "Dipit";
+            Both a & b would point to the same pool which contains the string "Dipit"
+            If we change the string through the reference var name, then it would not be changed for b, though they are pointing towards the same string because of immutability
+    -> Immutability
