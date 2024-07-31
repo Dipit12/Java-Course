@@ -1,0 +1,13 @@
+-> All the recursion calls are stored in a stack
+-> While the func is not finished executing, it will remain in the stack memory
+-> We know that the main function, is the first function thats called, thus it is the first one to go in the stack and last one to come out of the stack
+-> When a function is finished executed its removed from the stack, and the flow of the program is restored to where the program had started
+-> Ref: main.java, Thus num5() would be removed from the stack first, 5->4->3->2->1->main
+
+-> Base condition: condition where our recursive function stops making calls
+-> No-base condition: function calls will happen infinitely, stack will be pilled again and again, more and more memory would be used up -> after some time we will get a stack overflow error
+-> Using recursion we can break complex problems into smaller problems
+-> The base condition is represented by answers we already have
+Types of recurence relation:
+    -> Linear recurrence relation -> Fibo num
+    -> Divide and conquer recurence relation -> Binary search
